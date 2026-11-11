@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Java / Maven 依賴（讀 pom.xml）
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # 順便讓 workflow 裡用到的 actions 保持最新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
